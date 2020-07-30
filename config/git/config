@@ -1,0 +1,13 @@
+[user]
+	name = Jesse van der Pluijm
+	email = jessevdp@hey.com
+
+[github]
+	user = jessevdp
+
+[core]
+	excludesfile = ~/.config/git/ignore
+	editor = vim
+
+[credential]
+	helper = osxkeychain
