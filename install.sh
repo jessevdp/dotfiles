@@ -1,8 +1,7 @@
 #!/bin/bash
 
-DOTFILES_DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
-# TODO cleanup bin folder
-PATH := $(DOTFILES_DIR)/bin:$(PATH)
+DOTFILES_DIR=$(dir $(realpath $(firstword $(MAKEFILE_LIST))))
+PATH="$DOTFILES_DIR/bin:$PATH"
 export N_PREFIX="$HOME/.n"
 export XDG_CONFIG_HOME := $(HOME)/.config
 export STOW_DIR := $(DOTFILES_DIR)
