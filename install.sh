@@ -40,10 +40,10 @@ n latest
 # =========================
 
 # Brew packages
-brew bundle --file=$(DOTFILES_DIR)/install/Brewfile
+brew bundle --file="$DOTFILES_DIR/install/Brewfile"
 
 # Brew-Cask apps
-brew bundle --file=$(DOTFILES_DIR)/install/Caskfile
+brew bundle --file="$DOTFILES_DIR/install/Caskfile"
 for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
 
 # =========================
