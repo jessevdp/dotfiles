@@ -43,7 +43,7 @@ zsh: brew
 # PACKAGES
 # ===============
 
-packages: brew-packages cask-apps node-packages gems
+packages: brew-packages cask-apps
 
 # TODO: Brewfile
 brew-packages: brew
