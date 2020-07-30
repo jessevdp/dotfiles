@@ -1,4 +1,4 @@
-SHELL = /bin/bash
+SHELL = /bin/zsh
 DOTFILES_DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 OS := $(shell bin/is-supported bin/is-macos macos linux)
 PATH := $(DOTFILES_DIR)/bin:$(PATH)
@@ -17,7 +17,7 @@ sudo:
 # SOFTWARE
 # ===============
 
-core-macos: brew git nodejs ruby
+core-macos: brew zsh git nodejs ruby
 
 brew:
 	is-executable brew || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
@@ -32,6 +32,13 @@ nodejs: brew
 
 ruby: brew
 	brew install ruby
+
+zsh: brew
+	brew install zsh
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	upgrade_oh_my_zsh
+	git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+	ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # PACKAGES
 # ===============
