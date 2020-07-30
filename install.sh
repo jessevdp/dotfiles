@@ -44,7 +44,7 @@ brew bundle --file="$DOTFILES_DIR/install/Brewfile"
 
 # Brew-Cask apps
 brew bundle --file="$DOTFILES_DIR/install/Caskfile"
-for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done
+for EXT in $(cat install/Codefile); do code --install-extension $EXT; done
 
 # =========================
 # Linking
