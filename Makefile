@@ -2,6 +2,7 @@ SHELL = /bin/bash
 DOTFILES_DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 OS := $(shell bin/is-supported bin/is-macos macos linux)
 PATH := $(DOTFILES_DIR)/bin:$(PATH)
+export N_PREFIX="$HOME/.n"
 export XDG_CONFIG_HOME := $(HOME)/.config
 export STOW_DIR := $(DOTFILES_DIR)
 
@@ -24,7 +25,7 @@ brew:
 git: brew
 	brew install git
 
-nodejs:
+nodejs: brew
 	brew install node
 	brew install n
 	n latest
