@@ -1,0 +1,68 @@
+set nocompatible        " get rid of Vi compatibility mode. SET FIRST!
+
+" Colors {{{
+
+set termguicolors       " enable true colors support
+set t_Co=256            " enable 265-color mode
+syntax enable           " enable syntax processing
+colorscheme smyck       " awesome colorscheme
+
+" }}}
+
+" Spaces and Tabs {{{
+
+set tabstop=4           " number of visual spaces per TAB
+set expandtab           " tabs are spaces
+set softtabstop=4       " number of spaces in tab when editing
+set shiftwidth=4
+
+" }}}
+
+" UI Config {{{
+
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+" set cursorline          " highlight current line
+filetype indent on      " load filetype-specific indent files
+set lazyredraw          " redraw only when we need to.
+set showmatch           " highlight matching [{()}]
+
+" }}}
+
+" Searching {{{
+
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+" turn off search highlight using ',<space>'
+let mapleader = ","
+nnoremap <leader><space> :nohlsearch<CR>
+
+" }}}
+
+" Custom keybinding {{{
+
+" Avoid bad habit of using arrow keys in normal mode
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
+
+" }}}
+
+" AutoGroups {{{
+
+augroup configgroup
+    autocmd!
+    autocmd BufWritePre **.rb,.js,*.txt,*.md :call <SID>StripTrailingWhitespaces()
+    autocmd FileType ruby setlocal tabstop=2
+    autocmd FileType ruby setlocal shiftwidth=2
+    autocmd FileType ruby setlocal softtabstop=2
+    autocmd FileType ruby setlocal commentstring=#\ %s
+augroup END
+
+" }}}
+
+" Enable folding groups in this file
+set modelines=1
+" vim:foldmethod=marker:foldlevel=0
