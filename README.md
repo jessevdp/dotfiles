@@ -2,6 +2,7 @@
 
 Installs:
 - [Homebrew](https://brew.sh) and packages listed in [`install/Brewfile`](./install/Brewfile).
+- [Zsh](https://www.zsh.org) combined with [oh my zsh](https://ohmyz.sh).
 - [Git](https://git-scm.com)
 - [NodeJS](https://nodejs.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
@@ -9,6 +10,11 @@ Installs:
 - VSCode extensions listed in [`install/Codefile`](./install/Codefile).
 
 Configures:
+- Zsh and oh- my zsh.
+- Vim.
+- Git.
+- Npm.
+- MacOS terminal.
 - MacOS dock items.
 - MacOS default settings, see [`macos/defaults.sh`](./macos/defaults.sh).
 
