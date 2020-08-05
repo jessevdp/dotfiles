@@ -27,17 +27,17 @@ sudo softwareupdate -i -a
 xcode-select --install
 ```
 
-The Xcode Command Line Tools includes git and make (not available on stock macOS). Then, clone this repo:
+The Xcode Command Line Tools includes git (not available on stock macOS). Then, clone this repo:
 
 ```
 git clone https://github.com/jessevdp/dotfiles.git ~/.dotfiles
 ```
 
-Use the Makefile to install everything:
+Use the install script to install everything:
 
 ```
 cd ~/.dotfiles
-make
+sh install.sh
 ```
 
 Import the Terminal app profile from [`macos/Dark.terminal`](./macos/Dark.terminal) through the terminal apps UI.
