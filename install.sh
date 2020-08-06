@@ -59,5 +59,5 @@ mkdir -p $(XDG_CONFIG_HOME)
 stow -t $(HOME) runcom
 stow -t $(XDG_CONFIG_HOME) config
 
-# Link VSCode settings
-ln -s ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+# Copy VSCode settings
+cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
