@@ -40,7 +40,7 @@ cd ~/.dotfiles
 sh install.sh
 ```
 
-Import the Terminal app profile from [`macos/Dark.terminal`](./macos/Dark.terminal) through the terminal apps UI.
+Import the Terminal app profile from [`macos/Dark.terminal`](./macos/Dark.terminal) by opening that file or through the terminal apps settings UI.
 Then apply MacOS defaults and dock items configuration:
 
 ```
