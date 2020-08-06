@@ -42,6 +42,12 @@ sudo nvram SystemAudioVolume=" "
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent YES
 
+# Menu bar: show bluetooth
+defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -bool true
+
+# Menu bar: show volume
+defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
+
 # Enable opening and closing window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool true
 
@@ -171,6 +177,11 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Magnification
+defaults write com.apple.dock magnification -bool true
+defaults read-type com.apple.dock tilesize -float 18
+defaults read-type com.apple.dock largesize -float 86
+
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
@@ -182,6 +193,9 @@ defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tr-corner -int 0
 defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-br-corner -int 0
+
+# Don't show recently used applications in the Dock
+defaults write com.Apple.Dock show-recents -bool false
 
 ###############################################################################
 # Mail                                                                        #
