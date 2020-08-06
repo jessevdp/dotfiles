@@ -58,3 +58,6 @@ for FILE in $(ls -A runcom); do if [ -f $(HOME)/$FILE -a ! -h $(HOME)/$FILE ]; t
 mkdir -p $(XDG_CONFIG_HOME)
 stow -t $(HOME) runcom
 stow -t $(XDG_CONFIG_HOME) config
+
+# Link VSCode settings
+ln -s ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
