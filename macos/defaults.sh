@@ -1,4 +1,4 @@
-COMPUTER_NAME="MBP"
+COMPUTER_NAME="MBP2020"
 
 osascript -e 'tell application "System Preferences" to quit'
 
