@@ -47,3 +47,7 @@ Then apply MacOS defaults and dock items configuration:
 sh ./macos/dock.sh
 sh ./macos/defaults.sh
 ```
+
+# Troubleshooting
+
+* Git CLI doesn't accept my GitHub username/password combo. This happens when you enable 2FA on GitHub. According to [stackoverflow](https://stackoverflow.com/questions/29297154/github-invalid-username-or-password) the fix is to generate a personal access token and use this in place of the regular password.
