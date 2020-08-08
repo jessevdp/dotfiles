@@ -4,6 +4,7 @@ export N_PREFIX="$HOME/.n"
 export GEM_HOME="$HOME/.gems"
 
 export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH" # homebrew sbin
 export PATH="$HOME/.npm/bin:$PATH"
 export PATH="$N_PREFIX/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
