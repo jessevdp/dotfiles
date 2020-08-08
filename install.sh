@@ -23,7 +23,7 @@ brew install git
 # Zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-upgrade_oh_my_zsh
+source ~/.zshrc
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
@@ -54,7 +54,7 @@ for EXT in $(cat install/Codefile); do code --install-extension $EXT; done
 is-executable stow || brew install stow
 
 # Execute linking
-for FILE in $(ls -A runcom); do if [ -f "$HOME/$FILE" -a ! -h "$HOME/$FILE" ]; then mv -v "$HOME/$FILE{,.bak}"; fi; done
+for FILE in $(ls -A runcom); do if [ -f "$HOME/$FILE" -a ! -h "$HOME/$FILE" ]; then mv "$HOME/$FILE" "$HOME/$FILE.bak"; fi; done
 mkdir -p "$XDG_CONFIG_HOME"
 stow -t "$HOME" runcom
 stow -t "$XDG_CONFIG_HOME" config
