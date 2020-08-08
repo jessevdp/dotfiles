@@ -178,9 +178,10 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock autohide -bool true
 
 # Magnification
+defaults write com.apple.dock size-immutable -bool false
 defaults write com.apple.dock magnification -bool true
-defaults read-type com.apple.dock tilesize -float 18
-defaults read-type com.apple.dock largesize -float 86
+defaults read-type com.apple.dock tilesize -float 16
+defaults read-type com.apple.dock largesize -float 80
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
