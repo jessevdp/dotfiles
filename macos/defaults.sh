@@ -199,6 +199,13 @@ defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.Apple.Dock show-recents -bool false
 
 ###############################################################################
+# Desktop                                                                        #
+###############################################################################
+
+# Use stacks
+defaults write com.apple.finder "DesktopViewSettings" -dict-add "GroupBy" 'Kind'
+
+###############################################################################
 # Mail                                                                        #
 ###############################################################################
 
