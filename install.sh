@@ -17,6 +17,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Homebrew
 is-executable brew || sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+# Homebrew permissions
+sudo chown -R $(whoami) $(brew --prefix)/*
+
 # Git
 brew install git
 
