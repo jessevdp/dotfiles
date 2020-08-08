@@ -33,7 +33,12 @@ The Xcode Command Line Tools includes git (not available on stock macOS). Then, 
 git clone https://github.com/jessevdp/dotfiles.git ~/.dotfiles
 ```
 
-Use the install script to install everything:
+First, make sure all "personal" configurable values are as desired:
+- Git config (such as username/email) in [`config/git/config`](./config/git/config)
+- Computer name set in [`macos/defaults.sh](./macos/defaults.sh)
+
+
+Then, use the install script to install everything:
 
 ```
 cd ~/.dotfiles
