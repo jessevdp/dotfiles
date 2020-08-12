@@ -15,4 +15,6 @@
   "npm.enableRunFromFolder": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "todo-tree.tree.showScanModeButton": false,
+  "css.validate": false,
+  "stylelint.enable": true,
 }

@@ -2,3 +2,5 @@ mikestead.dotenv
 dbaeumer.vscode-eslint
 github.github-vscode-theme
 gruntfuggly.todo-tree
+bradlc.vscode-tailwindcss
+stylelint.vscode-stylelint
