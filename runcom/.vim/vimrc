@@ -2,7 +2,7 @@ set nocompatible        " get rid of Vi compatibility mode. SET FIRST!
 
 " Colors {{{
 
-set termguicolors       " enable true colors support
+" set termguicolors       " enable true colors support
 set t_Co=256            " enable 265-color mode
 syntax enable           " enable syntax processing
 colorscheme smyck       " awesome colorscheme
