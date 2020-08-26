@@ -4,6 +4,7 @@ tap "homebrew/services"
 
 brew "dockutil"
 brew "grep"
+brew "llvm" # c++ compiler
 brew "stow"
 brew "tree"
 brew "vim"
