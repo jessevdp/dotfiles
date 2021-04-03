@@ -64,3 +64,6 @@ stow -t "$XDG_CONFIG_HOME" config
 
 # Copy VSCode settings
 cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
+
+# Generate Vim helptags
+vim -E -c helptags ALL -c q
