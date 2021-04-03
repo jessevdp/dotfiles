@@ -4,3 +4,6 @@
 [submodule "runcom/.vim/pack/plugins/start/vim-auto-pairs"]
 	path = runcom/.vim/pack/plugins/start/vim-auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "runcom/.vim/pack/plugins/start/vim-endwise"]
+	path = runcom/.vim/pack/plugins/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
