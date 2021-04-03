@@ -1,3 +1,6 @@
 [submodule "runcom/.vim/pack/plugins/start/vim-commentary"]
 	path = runcom/.vim/pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "runcom/.vim/pack/plugins/start/vim-auto-pairs"]
+	path = runcom/.vim/pack/plugins/start/vim-auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
