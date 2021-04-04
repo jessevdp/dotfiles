@@ -7,3 +7,6 @@
 [submodule "runcom/.vim/pack/plugins/start/vim-endwise"]
 	path = runcom/.vim/pack/plugins/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule "runcom/.vim/pack/plugins/start/vim-nerdtree"]
+	path = runcom/.vim/pack/plugins/start/vim-nerdtree
+	url = https://github.com/preservim/nerdtree.git
