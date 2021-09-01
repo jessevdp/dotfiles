@@ -30,7 +30,7 @@ xcode-select --install
 The Xcode Command Line Tools includes git (not available on stock macOS). Then, clone this repo:
 
 ```
-git clone --recrusive https://github.com/jessevdp/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/jessevdp/dotfiles.git ~/.dotfiles
 ```
 
 First, make sure all "personal" configurable values are as desired:
