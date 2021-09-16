@@ -1,15 +1,16 @@
 # If you come from bash you might have to change your $PATH.
 
 export N_PREFIX="$HOME/.n"
-export GEM_HOME="$HOME/.gems"
 
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH" # homebrew sbin
 export PATH="$HOME/.npm/bin:$PATH"
 export PATH="$N_PREFIX/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$GEM_HOME/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH" # llvm (c++)
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -84,6 +85,9 @@ plugins=(
   brew
   npm
   ruby
+  rails
+  bundler
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh

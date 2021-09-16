@@ -31,7 +31,16 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Ruby
-brew install ruby
+
+brew install rbenv
+brew install openssl
+
+RUBY_LTS=$(rbenv install -l | grep -v - | tail -1)
+rbenv install $RUBY_LTS
+rbenv global $RUBY_LTS
+
+gem install bundler
+
 
 # NodeJS
 brew install node
