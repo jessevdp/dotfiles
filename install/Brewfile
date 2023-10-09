@@ -2,8 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 
-brew "dockutil"
+brew "dockutil" # Manage MacOS Dock items via CLI, used by: macos/dock.sh
 brew "grep"
-brew "stow"
+brew "stow" # Manage symlinks in bulk, used by: install.sh
 brew "tree"
 brew "vim"
