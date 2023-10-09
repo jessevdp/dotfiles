@@ -7,7 +7,6 @@ export PATH="/usr/local/sbin:$PATH" # homebrew sbin
 export PATH="$HOME/.npm/bin:$PATH"
 export PATH="$N_PREFIX/bin:$PATH"
 export PATH="$GEM_HOME/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH" # llvm (c++)
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -110,14 +109,6 @@ export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# llvm (c++)
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/libffi/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/libffi/include"
-
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
