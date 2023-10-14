@@ -7,3 +7,6 @@ brew "grep"
 brew "stow" # Manage symlinks in bulk, used by: install.sh
 brew "tree"
 brew "vim"
+
+brew "mysql"
+brew "postgresql"
