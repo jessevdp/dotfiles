@@ -6,15 +6,43 @@
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.semanticHighlighting.enabled": true,
+  // for ext: socheatsok78-lab.dotenv-vscode-stripped
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
   "workbench.sideBar.location": "right",
   "workbench.colorTheme": "GitHub Dark",
   "explorer.compactFolders": false,
-  "window.zoomLevel": 0,
-  "diffEditor.renderSideBySide": true,
   "git.autofetch": true,
-  "npm.enableRunFromFolder": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "todo-tree.tree.showScanModeButton": false,
-  "css.validate": false,
-  "stylelint.enable": true,
+  "diffEditor.renderSideBySide": true,
+  "todohighlight.defaultStyle": {
+    "color": "black",
+    "backgroundColor": "white",
+    "overviewRulerColor": "red",
+    "borderRadius": "0",
+    "isWholeLine": false,
+  },
+  "todohighlight.keywords": [
+    "HACK:",
+    "NOTE:",
+    "DEBUG:",
+    "REVIEW:",
+    {
+      "text": "TODO:",
+      "color": "black",
+      "backgroundColor": "white",
+      "overviewRulerColor": "red",
+      "borderRadius": "0",
+      "isWholeLine": false,
+    }
+  ]
 }
