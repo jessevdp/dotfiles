@@ -94,6 +94,9 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Enable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
+
 ###############################################################################
 # Trackpad, mouse, Bluetooth accessories                                      #
 ###############################################################################
