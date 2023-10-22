@@ -71,8 +71,11 @@ mkdir -p "$XDG_CONFIG_HOME"
 stow -t "$HOME" runcom
 stow -t "$XDG_CONFIG_HOME" config
 
-# Copy VSCode settings
-cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/
+# Link VSCode settings
+VSCODE_SETTINGS_DIR='~/Library/Application\ Support/Code/User/'
+mv "$VSCODE_SETTINGS_DIR/settings.json" "$VSCODE_SETTINGS_DIR/settings.json.bak"
+ln -s "$DOTFILES_DIR/vscode/settings.json" "$VSCODE_SETTINGS_DIR/settings.json"
+
 
 # Generate Vim helptags
 vim -E -c helptags ALL -c q
