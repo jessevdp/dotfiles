@@ -7,6 +7,7 @@ export PATH="/usr/local/sbin:$PATH" # homebrew sbin
 export PATH="$HOME/.npm/bin:$PATH"
 export PATH="$N_PREFIX/bin:$PATH"
 export PATH="$GEM_HOME/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
