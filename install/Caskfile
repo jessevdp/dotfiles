@@ -11,6 +11,7 @@ cask "hey"
 cask "ngrok"
 cask "visual-studio-code"
 cask "whatsapp"
+cask "maccy" # nice clipboard manager [https://maccy.app]
 
 # Fonts
 cask "font-fira-code"
