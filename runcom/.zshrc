@@ -86,6 +86,7 @@ plugins=(
   npm
   ruby
   rails
+  rake
   bundler
   docker
 )
