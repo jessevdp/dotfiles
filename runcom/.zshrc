@@ -15,6 +15,9 @@ export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export PATH="/usr/local/opt/php@8.1/bin:$PATH"
+export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -92,8 +95,10 @@ plugins=(
   rails
   rake
   bundler
+  capistrano
   docker
   colored-man-pages
+  aws
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -125,3 +130,23 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/Users/jessevanderpluijm'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+
+
+# KNMI AWS session shit...
+aws-session() {
+    eval $(start-session aws)
+    [[ -n "${PROJECT_ROOT:-}" ]] && [[ -n "${AWS_PROFILE:-}" ]] && echo -n "${AWS_PROFILE}" > "${PROJECT_ROOT}/.aws_profile"
+}
+# export -f aws-session
+
+
+
+# direnv.net
+eval "$(direnv hook zsh)"
+
