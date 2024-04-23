@@ -8,6 +8,24 @@
 [core]
 	excludesfile = ~/.config/git/ignore
 	editor = vim
+    pager = delta
+
+[delta]
+    side-by-side = false
+    navigate = true    # use n and N to move between diff sections
+    line-numbers = true
+    file-style = none
+    file-decoration-style = none
+    hunk-header-style = omit
+
+    line-numbers-left-style = gray
+    line-numbers-right-style = gray
+    line-numbers-zero-style = gray
+    line-numbers-minus-style = red
+    line-numbers-plus-style = green
+
+[interactive]
+    diffFilter = delta --color-only
 
 [credential]
 	helper = osxkeychain
@@ -27,5 +45,8 @@
 [fetch]
 	prune = true
 
+[merge]
+    conflictstyle = diff3
+
 [diff]
-	colorMoved = zebra
+    colorMoved = default

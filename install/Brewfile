@@ -8,5 +8,7 @@ brew "stow" # Manage symlinks in bulk, used by: install.sh
 brew "tree"
 brew "vim"
 
+brew "git-delta"
+
 brew "mysql"
 brew "postgresql@16"
