@@ -90,6 +90,7 @@ plugins=(
   rake
   bundler
   docker
+  colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
