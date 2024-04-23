@@ -50,3 +50,7 @@
 
 [diff]
     colorMoved = default
+
+[diff "enc"]
+  textconv = rails encrypted:show
+  cachetextconv = false
