@@ -1,3 +1,6 @@
+# See:
+# - https://macos-defaults.com
+
 COMPUTER_NAME="MBP2020"
 
 osascript -e 'tell application "System Preferences" to quit'
@@ -250,7 +253,7 @@ defaults write com.apple.iCal "first day of week" -int 1
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+
 # Change indexing order and disable some file types
 defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
